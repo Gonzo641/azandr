@@ -45,10 +45,10 @@ export default function Nav() {
           Azandr
         </Link>
       </div>
-      <div className="flex gap-8 justify-center items-center font-anton">
-        <HoverLink href="/" className="text-2xl">Home</HoverLink>
-        <HoverLink href="/about" className="text-2xl">About me</HoverLink>
-        <HoverLink href="/contact" className="text-2xl">Contact</HoverLink>
+      <div className="flex gap-4 md:gap-8 justify-center items-center font-anton">
+        <HoverLink href="/" className=" text-xl md:text-2xl">Home</HoverLink>
+        <HoverLink href="/about" className=" text-xl md:text-2xl">About me</HoverLink>
+        <HoverLink href="/contact" className=" text-xl md:text-2xl">Contact</HoverLink>
       </div>
     </nav>
   )
