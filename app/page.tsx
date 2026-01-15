@@ -11,7 +11,7 @@ export default function Home() {
         alt="Paysage en arrière-plan"
         fill
         priority
-        className="-z-10 opacity-80"
+        className="-z-10 opacity-90"
         quality={75}
       />
       <div className="mt-112.5">
