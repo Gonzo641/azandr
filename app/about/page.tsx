@@ -7,7 +7,7 @@ export default function page() {
     <>
       <ReactLenis root />
       <div className="relative h-screen w-full ">
-        <div className="flex flex-col gap-8 pt-60">
+        <div className="flex flex-col gap-8 md:pt-60 pt-64">
           <Image
             src="/images/Azandr4.jpg"
             alt="Paysage en arrière-plan"
@@ -17,7 +17,7 @@ export default function page() {
             quality={75}
           />
           <Copy delay={0.6}>
-            <h1 className="flex justify-center items-center pt-50 text-[14rem]">
+            <h1 className="flex justify-center items-center pt-50 text-[6rem] md:text-[14rem]">
               Who am i
             </h1>
           </Copy>
@@ -25,8 +25,7 @@ export default function page() {
       </div>
 
 
-
-      <div className="grid grid-cols-2 py-40 px-20">
+      <div className="flex flex-col md:flex-row justify-center items-center py-40 md:px-20 px-4 gap-8">
         <div className="relative w-3/4 h-150">
           <Image
             src="/images/Azandr11.jpg"
@@ -67,18 +66,17 @@ export default function page() {
       </div>
 
 
+      <div>
+        <Copy>
+        <h1 className="md:text-[12rem] text-[5rem] pl-18 md:pb-20">
+          SELECTED VENUES
+        </h1>
+        </Copy>
+      </div>
 
-      <div className="grid grid-cols-2 py-20">
-        <div>
-          <Copy>
-
-          <h1 className="text-[10rem] pl-4 pb-20">
-            SELECTED VENUES
-          </h1>
-          </Copy>
-        </div>
-        <div className="flex flex-col gap-8 items-center justify-center w-full p-8 col-start-1
-                        font-anton text-5xl">
+      <div className="flex flex-col md:flex-row justify-center items-center py-20 md:px-20 px-4 gap-8">
+        <div className="flex flex-col justify-center w-full
+                        font-anton md:text-5xl text-3xl">
           <Copy>
             <div>
               <p>
@@ -127,12 +125,12 @@ export default function page() {
 
       <div className="flex flex-col justify-center items-center py-20 gap-8">
         <Copy>
-          <h1 className="text-[10rem]">
+          <h1 className="md:text-[10rem] text-[5rem]">
             MUSIC STYLE
           </h1>
         </Copy>
         <Copy>
-          <div className="flex flex-col justify-center items-center gap-4 text-[2rem] font-anton">
+          <div className="flex flex-col justify-center items-center gap-4 md:text-[2rem] text-[1rem] font-anton">
             <p>
               TECH HOUSE  & GROOVE
             </p>
@@ -144,7 +142,7 @@ export default function page() {
       </div>
 
 
-      <div className="grid grid-cols-2 py-40 px-20">
+      <div className="flex flex-col md:flex-row justify-center items-center py-40 md:px-20 px-4 gap-8">
         <div className="relative w-3/4 h-150">
           <Image
             src="/images/Azandr8.jpg"
@@ -164,7 +162,7 @@ export default function page() {
               </h1>
             </div>
           </Copy>
-          <Copy>
+          <Copy delay={0.4}>
             <div>
               <p>
                 • 2–3 HOUR CLUB-FOCUSED SETS (ADAPTABLE TO THE LINE-UP)
@@ -196,14 +194,14 @@ export default function page() {
       </div>
 
 
-      <div className="flex flex-col justify-center items-center pt-40 pb-48 gap-8">
+      <div className="flex flex-col justify-center items-center md:pt-40 pb-48 gap-8 px-8">
         <Copy>
           <h1 className="text-[10rem]">
             RIDER
           </h1>
         </Copy>
-        <Copy>
-        <div className="flex flex-col justify-center  text-[2rem] font-anton">
+        <Copy delay={0.4}>
+        <div className="flex flex-col justify-center text-[2rem] font-anton">
           <p>
             • 2× PIONEER CDJ-2000NXS2 OR CDJ-3000
           </p>
