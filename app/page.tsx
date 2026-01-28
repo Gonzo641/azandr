@@ -6,7 +6,7 @@ import { SiSoundcloud, SiBeatport, SiInstagram, SiFacebook } from "react-icons/s
 export default function Home() {
   return (
     <>
-      <div className="relative flex flex-col md:flex-row h-svh w-full p-8">
+      <div className="relative flex flex-col md:flex-row h-svh w-full p-8 gap-4">
         <Image
           src="/images/Azandr7.jpg"
           alt="Paysage en arrière-plan"
@@ -15,9 +15,9 @@ export default function Home() {
           className="-z-10 opacity-90"
           quality={75}
         />
-        <div className="mt-120 md:mt-112.5">
+        <div className="flex items-end h-full">
           <Copy delay={0.6}>
-            <h1 className="text-8xl md:text-[12rem]">
+            <h1 className="text-8xl lg:text-[12rem]">
               AZANDR
             </h1>
           </Copy>

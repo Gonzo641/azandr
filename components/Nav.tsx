@@ -39,16 +39,16 @@ const HoverLink = ({ href, children, className = "" }: HoverLinkProps) => {
 
 export default function Nav() {
   return (
-    <nav className="fixed z-10 flex items-center justify-between w-full p-8">
+    <nav className="fixed z-10 flex items-center justify-between w-full md:p-8 p-6">
       <div>
         <Link href="/" className="text-2xl font-anton">
           Azandr
         </Link>
       </div>
       <div className="flex gap-4 md:gap-8 justify-center items-center font-anton">
-        <HoverLink href="/" className=" text-xl md:text-2xl">Home</HoverLink>
-        <HoverLink href="/about" className=" text-xl md:text-2xl">About me</HoverLink>
-        <HoverLink href="/contact" className=" text-xl md:text-2xl">Contact</HoverLink>
+        <HoverLink href="/" className=" text-lg md:text-2xl">Home</HoverLink>
+        <HoverLink href="/about" className=" text-lg md:text-2xl">About me</HoverLink>
+        <HoverLink href="/contact" className=" text-lg md:text-2xl">Contact</HoverLink>
       </div>
     </nav>
   )

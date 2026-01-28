@@ -7,7 +7,7 @@ export default function page() {
     <>
       <ReactLenis root />
       <div className="relative h-screen w-full ">
-        <div className="flex flex-col gap-8 md:pt-60 pt-64">
+        <div className="flex flex-col gap-8 md:pt-50 pt-64">
           <Image
             src="/images/Azandr4.jpg"
             alt="Paysage en arrière-plan"
@@ -17,7 +17,7 @@ export default function page() {
             quality={75}
           />
           <Copy delay={0.6}>
-            <h1 className="flex justify-center items-center pt-50 text-[6rem] md:text-[14rem]">
+            <h1 className="flex justify-center items-center text-[5.5rem] md:text-[12rem] xl:text-[14rem] h-screen">
               Who am i
             </h1>
           </Copy>
@@ -25,7 +25,7 @@ export default function page() {
       </div>
 
 
-      <div className="flex flex-col md:flex-row justify-center items-center py-40 md:px-20 px-4 gap-8">
+      <div className="flex flex-col xl:flex-row justify-center items-center py-40 xl:px-20 px-4 gap-8">
         <div className="relative w-3/4 h-150">
           <Image
             src="/images/Azandr11.jpg"
@@ -68,15 +68,14 @@ export default function page() {
 
       <div>
         <Copy>
-        <h1 className="md:text-[12rem] text-[5rem] pl-18 md:pb-20">
+        <h1 className="xl:text-[16rem] md:text-[12rem] text-[5rem] pl-10 md:pl-18 md:pb-20">
           SELECTED VENUES
         </h1>
         </Copy>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center py-20 md:px-20 px-4 gap-8">
-        <div className="flex flex-col justify-center w-full
-                        font-anton md:text-5xl text-3xl">
+      <div className="flex flex-col xl:flex-row justify-center items-center py-20 md:px-20 px-4 gap-10">
+        <div className="flex flex-col justify-center w-full font-anton md:text-5xl text-3xl">
           <Copy>
             <div>
               <p>
@@ -123,7 +122,7 @@ export default function page() {
 
 
 
-      <div className="flex flex-col justify-center items-center py-20 gap-8">
+      <div className="flex flex-col justify-center items-center py-10 md:py-20 gap-8">
         <Copy>
           <h1 className="md:text-[10rem] text-[5rem]">
             MUSIC STYLE
@@ -132,9 +131,9 @@ export default function page() {
         <Copy>
           <div className="flex flex-col justify-center items-center gap-4 md:text-[2rem] text-[1rem] font-anton">
             <p>
-              TECH HOUSE  & GROOVE
+              TECH HOUSE & GROOVE
             </p>
-            <p>
+            <p className="px-20 sm:px-40 lg:px-0">
               CLUB-ORIENTED · 122–127 BPM · WARM-UP / PEAK-TIME / CLOSING
             </p>
           </div>
@@ -142,7 +141,7 @@ export default function page() {
       </div>
 
 
-      <div className="flex flex-col md:flex-row justify-center items-center py-40 md:px-20 px-4 gap-8">
+      <div className="flex flex-col xl:flex-row justify-center items-center py-40 md:px-20 px-4 gap-8">
         <div className="relative w-3/4 h-150">
           <Image
             src="/images/Azandr8.jpg"
@@ -155,35 +154,35 @@ export default function page() {
         </div>
         <div className="flex flex-col gap-8 justify-center w-full p-8 col-start-2
                         font-anton text-2xl">
-          <Copy delay={0.6}>
+          <Copy delay={0.4}>
             <div>
               <h1 className="text-[6rem]">
                 WHAT YOU GET
               </h1>
             </div>
           </Copy>
-          <Copy delay={0.4}>
+          <Copy delay={0.6}>
             <div>
               <p>
                 • 2–3 HOUR CLUB-FOCUSED SETS (ADAPTABLE TO THE LINE-UP)
               </p>
             </div>
           </Copy>
-          <Copy>
+          <Copy delay={0.6}>
             <div>
               <p>
                 • TECH HOUSE & MELODIC HOUSE SELECTION BUILT FOR DANCEFLOORS
               </p>
             </div>
           </Copy>
-          <Copy>
+          <Copy delay={0.6}>
             <div>
               <p>
                 • MOOTH TRANSITIONS, TENSION + RELEASE, STRONG CROWD READING
               </p>
             </div>
           </Copy>
-          <Copy>
+          <Copy delay={0.6}>
             <div>
               <p>
                 • PROFESSIONAL APPROACH: ON TIME, RELIABLE, EASY TO WORK WITH
