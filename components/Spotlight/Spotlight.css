@@ -6,6 +6,14 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: var(--base-450);
+}
+
+.spotlight-desktop-view {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .spotlight-outline {
@@ -128,7 +136,7 @@
 .spotlight-titles {
   position: relative;
   left: 15%;
-  width: 75%;
+  width: 65%;
   height: auto;
   min-height: 100%;
   display: flex;
@@ -189,7 +197,7 @@
 .spotlight-header {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   transform: translateY(-50%);
   color: var(--base-100);
   transition: opacity 0.3s ease;
@@ -204,14 +212,92 @@
   color: var(--base-100);
 }
 
+/* --- Mobile View Styles --- */
+.spotlight-mobile-view {
+  display: none;
+  width: 100%;
+  padding: 4rem 1.5rem;
+  box-sizing: border-box;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlight-mobile-title {
+  font-size: 4rem;
+  color: var(--base-100);
+  font-family: var(--font-anton);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.spotlight-mobile-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.spotlight-mobile-arrow {
+  background: none;
+  border: none;
+  color: var(--base-100);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotlight-mobile-arrow svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.spotlight-mobile-arrow:active {
+  transform: scale(0.9);
+}
+
+.spotlight-mobile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-decoration: none;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+}
+
+.spotlight-mobile-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.spotlight-mobile-card-title {
+  font-size: 2rem;
+  color: var(--base-100);
+  font-family: var(--font-anton);
+  text-transform: uppercase;
+}
+
 @media (max-width: 1000px) {
-  .spotlight-titles,
-  .spotlight-titles-container::before,
-  .spotlight-titles-container::after {
+  .spotlight-desktop-view {
     display: none;
   }
-
-  .spotlight-images {
-    right: -4rem;
+  .spotlight-mobile-view {
+    display: flex;
+  }
+  .spotlight {
+    height: auto !important;
+    min-height: 100svh;
+    overflow: visible !important;
   }
 }
