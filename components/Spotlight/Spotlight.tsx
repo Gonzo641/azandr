@@ -72,6 +72,9 @@ const Spotlight = () => {
     }
   }, [mobileIndex]);
 
+  // Calcul des index pour le préchargement (rolling buffer)
+  const nextIndex = (mobileIndex + 1) % spotlightItems.length;
+  const prevIndex = (mobileIndex - 1 + spotlightItems.length) % spotlightItems.length;
 
 
 
@@ -319,6 +322,16 @@ const Spotlight = () => {
           <button className="spotlight-mobile-arrow" onClick={() => handleMobileChange(1)} aria-label="Next track">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
+        </div>
+
+        {/* Préchargement invisible des images voisine pour une transition instantanée */}
+        <div style={{ display: "none" }} aria-hidden="true">
+            <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+               <Image src={spotlightItems[nextIndex].img} alt="" fill priority sizes="100vw" />
+            </div>
+             <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+               <Image src={spotlightItems[prevIndex].img} alt="" fill priority sizes="100vw" />
+            </div>
         </div>
       </div>
     </section>
