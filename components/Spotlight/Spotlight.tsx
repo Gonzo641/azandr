@@ -2,7 +2,7 @@
 import "./Spotlight.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -78,7 +78,7 @@ const Spotlight = () => {
 
 
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mm = gsap.matchMedia();
 
     // Animation uniquement pour Desktop (>= 1000px)
