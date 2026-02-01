@@ -23,6 +23,7 @@ const Spotlight = () => {
   // const currentActiveIndexRef = useRef<number>(0);
 
   const scrollTriggerRef = useRef<ScrollTrigger | null>(null);
+  const isAnimatingRef = useRef(false);
   
   const [mobileIndex, setMobileIndex] = useState(0);
 
@@ -46,12 +47,14 @@ const Spotlight = () => {
   ];
 
   const handleMobileChange = (direction: number) => {
-    if (!mobileCardRef.current) return;
+    if (!mobileCardRef.current || isAnimatingRef.current) return;
+    
+    isAnimatingRef.current = true;
     
     // Animation de sortie (fade out)
     gsap.to(mobileCardRef.current, {
       opacity: 0,
-      duration: 0.2,
+      duration: 0.15,
       onComplete: () => {
         // Changement de l'index une fois invisible
         setMobileIndex((prev) => (prev + direction + spotlightItems.length) % spotlightItems.length);
@@ -62,7 +65,10 @@ const Spotlight = () => {
   // Animation d'entrée (fade in) à chaque changement d'index
   useEffect(() => {
     if (mobileCardRef.current) {
-      gsap.to(mobileCardRef.current, { opacity: 1, duration: 0.3 });
+      gsap.fromTo(mobileCardRef.current, 
+        { opacity: 0 },
+        { opacity: 1, duration: 0.25, onComplete: () => { isAnimatingRef.current = false; } }
+      );
     }
   }, [mobileIndex]);
 
@@ -299,7 +305,13 @@ const Spotlight = () => {
             ref={mobileCardRef}
           >
             <div className="spotlight-mobile-img-container">
-              <Image src={spotlightItems[mobileIndex].img} alt={spotlightItems[mobileIndex].name} fill className="object-cover" />
+              <Image 
+                src={spotlightItems[mobileIndex].img} 
+                alt={spotlightItems[mobileIndex].name} 
+                fill 
+                className="object-cover" 
+                priority
+              />
             </div>
             <h3 className="spotlight-mobile-card-title">{spotlightItems[mobileIndex].name}</h3>
           </Link>
