@@ -7,7 +7,7 @@ export default function page() {
     <>
       <ReactLenis root />
       <div className="relative h-screen w-full ">
-        <div className="flex flex-col gap-8 md:pt-50 pt-64">
+        <div className="flex flex-col gap-8 md:pt-50 pt-40">
           <Image
             src="/images/Azandr4.jpg"
             alt="Paysage en arrière-plan"

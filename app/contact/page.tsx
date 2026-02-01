@@ -13,7 +13,7 @@ export default function ContactPage() {
       />
       <h1>Contact</h1>
       <a href="mailto:contact@silhouette.dev" className="text-2xl">
-        contact@bmlc.com
+        azandrperso@gmail.com
       </a>
     </div>
   );
