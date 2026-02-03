@@ -25,8 +25,16 @@ const HoverLink = ({ href, children, className = "" }: HoverLinkProps) => {
     gsap.to(overlay.current, { width: "0%", duration: 0.5, ease: "power2.out" });
   });
 
+  const onClick = contextSafe(() => {
+    // Sur mobile/tactile, on retire l'effet hover après le clic pour éviter qu'il ne reste "collé"
+    const isTouch = window.matchMedia("(pointer: coarse)").matches || window.matchMedia("(hover: none)").matches;
+    if (isTouch) {
+      gsap.to(overlay.current, { width: "0%", duration: 0.5, ease: "power2.out" });
+    }
+  });
+
   return (
-    <Link href={href} className={`relative inline-block cursor-pointer text-[#e3e4d8] ${className}`} ref={container} onMouseEnter={onEnter} onMouseLeave={onLeave}>
+    <Link href={href} className={`relative inline-block cursor-pointer text-[#e3e4d8] ${className}`} ref={container} onMouseEnter={onEnter} onMouseLeave={onLeave} onClick={onClick}>
       {/* Texte de base */}
       <span className="relative z-10">{children}</span>
       {/* Texte de remplissage (overlay) */}
