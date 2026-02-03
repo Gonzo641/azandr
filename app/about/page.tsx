@@ -178,7 +178,7 @@ export default function page() {
           <Copy delay={0.6}>
             <div>
               <p>
-                • MOOTH TRANSITIONS, TENSION + RELEASE, STRONG CROWD READING
+                • SMOOTH TRANSITIONS, TENSION + RELEASE, STRONG CROWD READING
               </p>
             </div>
           </Copy>
