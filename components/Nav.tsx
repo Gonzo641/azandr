@@ -30,7 +30,7 @@ const HoverLink = ({ href, children, className = "" }: HoverLinkProps) => {
       {/* Texte de base */}
       <span className="relative z-10">{children}</span>
       {/* Texte de remplissage (overlay) */}
-      <div ref={overlay} className="absolute top-0 left-0 h-full w-0 overflow-hidden whitespace-nowrap text-[#a3b7b9] z-20 pointer-events-none" aria-hidden="true">
+      <div ref={overlay} className="absolute top-0 left-0 h-full w-0 overflow-hidden whitespace-nowrap text-[#1d1d1d] z-20 pointer-events-none" aria-hidden="true">
         {children}
       </div>
     </Link>

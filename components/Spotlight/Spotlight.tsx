@@ -279,7 +279,13 @@ const Spotlight = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={item.img} alt={item.name} />
+              <Image
+                src={item.img}
+                alt={item.name}
+                fill
+                sizes="200px"
+                style={{ objectFit: "cover" }}
+              />
             </Link>
           ))}
         </div>

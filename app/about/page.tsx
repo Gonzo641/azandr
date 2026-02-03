@@ -67,7 +67,7 @@ export default function page() {
 
 
       <div>
-        <Copy>
+        <Copy delay={0.6}>
         <h1 className="xl:text-[16rem] md:text-[12rem] text-[5rem] pl-10 md:pl-18 md:pb-20">
           SELECTED VENUES
         </h1>

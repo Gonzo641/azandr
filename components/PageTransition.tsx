@@ -5,6 +5,8 @@ import { useRouter, usePathname } from "next/navigation";
 import { gsap } from "gsap";
 import Logo from "./Logo";
 
+let isFirstLoad = true;
+
 export default function PageTransition({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -47,7 +49,12 @@ export default function PageTransition({ children }: { children: React.ReactNode
       });
     }
 
-    revealPage();
+    if (pathname === "/" && isFirstLoad) {
+      // On ne joue pas l'animation au premier chargement de la home (conflit preloader)
+    } else {
+      revealPage();
+    }
+    isFirstLoad = false;
 
     const handleRouteChange = (url: string) => {
       if (isTransitioning.current) return;

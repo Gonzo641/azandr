@@ -7,6 +7,8 @@
   align-items: center;
   overflow: hidden;
   background-color: var(--base-450);
+  --base-100: #e3e4d8;
+  --base-300: #a1a1aa;
 }
 
 .spotlight-desktop-view {
@@ -94,14 +96,14 @@
   left: 15vw;
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
-  /* clip-path: polygon(
+  overflow: hidden;
+  clip-path: polygon(
     50svh 0px,
     0px 50%,
     50svh 100%,
     100% calc(100% + 100svh),
     100% -100svh
-  ); */
+  );
   --before-opacity: 0;
   --after-opacity: 0;
   z-index: 10;
