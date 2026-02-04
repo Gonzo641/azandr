@@ -2,7 +2,6 @@
 
 import Copy from "@/components/Copy";
 import ReactLenis from "lenis/react";
-import Image from "next/image";
 import { useState } from "react";
 import { sendEmail } from "../actions";
 
@@ -40,15 +39,6 @@ export default function ContactPage() {
       `}} />
 
       <div className="flex h-svh w-full flex-col items-center justify-center gap-8 p-16">
-        <Image
-          src="/images/Azandr9.jpg"
-          alt="Paysage en arrière-plan"
-          fill
-          priority
-          className="-z-10 opacity-50"
-          style={{ objectFit: "cover" }}
-          quality={75}
-        />
         <Copy delay={0.5}>
           <h1 className="text-6xl md:text-8xl font-anton uppercase text-[#e3e4d8]">
             Contact

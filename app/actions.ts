@@ -16,7 +16,7 @@ export async function sendEmail(formData: FormData) {
 
   try {
     const data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>", // Utilisez votre domaine vérifié si vous en avez un, sinon gardez celui-ci pour tester
+      from: "Contact Form <onboarding@resend.dev>",
       to: ["dagonzo64@gmail.com"],
       subject: `[${subject}] New message from ${email}`,
       replyTo: email,
@@ -33,4 +33,4 @@ export async function sendEmail(formData: FormData) {
     console.error("Server Action Error:", error);
     return { error: "Something went wrong" };
   }
-}
+};
