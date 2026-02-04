@@ -8,8 +8,14 @@
 }
 
 @layer base {
-  html, body {
-    @apply bg-[#0a0a0a] text-[#e3e4d8];
+  html {
+    @apply bg-[#121212] text-[#e3e4d8];
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+  body {
+    @apply bg-[#121212];
   }
 
   h1 {
@@ -37,7 +43,7 @@
 .block {
   flex: 1;
   height: 100%;
-  background-color: #0a0a0a;
+  background-color: #121212;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -53,7 +59,7 @@
   justify-content: center;
   align-items: center;
   pointer-events: none; 
-  background-color: #0a0a0a;
+  background-color: #121212;
   opacity: 0;
 }
 

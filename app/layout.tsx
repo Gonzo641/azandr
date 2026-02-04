@@ -24,9 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${anton.variable} dark`}>
-      <body className="bg-[#0a0a0a] text-[#e3e4d8]">
+      <body className="text-[#e3e4d8]">
         <PageTransition>
-          <main className="relative min-h-svh w-full isolate">
+          <main className="relative min-h-svh w-full bg-[#121212] z-0">
             <Nav />
             {children}
             <Footer />
