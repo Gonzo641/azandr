@@ -21,10 +21,6 @@
     /* font-family: "DM Mono", monospace; */
     @apply text-[0.9rem] font-medium uppercase no-underline text-[#e3e4d8];
   }
-
-  img {
-    @apply h-full w-full object-cover;
-  }
 }
 
 .transition-overlay {
