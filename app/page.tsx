@@ -162,7 +162,7 @@ export default function Home() {
           alt="Paysage en arrière-plan"
           fill
           priority
-          className="-z-10 opacity-90 hero-img"
+          className="-z-10 opacity-90 hero-img object-cover"
           quality={75}
         />
         <div className="flex items-end h-full">

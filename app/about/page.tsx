@@ -13,7 +13,7 @@ export default function page() {
             alt="Paysage en arrière-plan"
             fill
             priority
-            className="-z-10 opacity-80"
+            className="-z-10 opacity-80 object-cover"
             quality={75}
           />
           <Copy delay={0.6}>
