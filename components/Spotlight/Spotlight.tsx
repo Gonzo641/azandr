@@ -233,7 +233,7 @@ const Spotlight = () => {
 
   
   return (
-    <section className="spotlight" ref={spotlightRef}>
+    <section className="spotlight bg-[#0a0a0a] text-[#e3e4d8]" ref={spotlightRef}>
       {/* --- Desktop View --- */}
       <div className="spotlight-desktop-view">
         <div className="spotlight-inner">

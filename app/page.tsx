@@ -117,7 +117,7 @@ export default function Home() {
       
       {/* Preloader */}
       {showPreloader && (
-        <div className="loader">
+        <div className="loader bg-[#0a0a0a] text-[#e3e4d8]">
           <div className="overlay">
             <div className="loader-block"></div>
             <div className="loader-block"></div>

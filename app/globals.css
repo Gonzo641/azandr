@@ -8,18 +8,18 @@
 }
 
 @layer base {
-  body {
-    @apply bg-white text-neutral-800 dark:bg-[#0a0a0a] dark:text-[#ededed];
+  html, body {
+    @apply bg-[#0a0a0a] text-[#e3e4d8];
   }
 
   h1 {
     font-family: var(--font-anton), sans-serif;
-    @apply uppercase text-[#141414] text-[3rem] leading-none dark:text-[#ededed] lg:text-[12rem];
+    @apply uppercase text-[#e3e4d8] text-[3rem] leading-none lg:text-[12rem];
   }
 
   a {
     /* font-family: "DM Mono", monospace; */
-    @apply text-[0.9rem] font-medium uppercase no-underline text-[#141414] dark:text-[#ededed];
+    @apply text-[0.9rem] font-medium uppercase no-underline text-[#e3e4d8];
   }
 
   img {

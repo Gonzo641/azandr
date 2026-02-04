@@ -23,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={anton.variable}>
-      <body>
+    <html lang="en" className={`${anton.variable} dark`}>
+      <body className="bg-[#0a0a0a] text-[#e3e4d8]">
         <PageTransition>
-          <main className="relative min-h-svh w-full bg-container-bg">
+          <main className="relative min-h-svh w-full">
             <Nav />
             {children}
             <Footer />
