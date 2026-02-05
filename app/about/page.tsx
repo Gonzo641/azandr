@@ -26,7 +26,7 @@ export default function page() {
 
 
       <div className="flex flex-col xl:flex-row justify-center items-center py-40 xl:px-20 px-4 gap-8">
-        <div className="relative w-3/4 h-150">
+        <div className="relative w-3/4 h-150 2xl:h-200">
           <Image
             src="/images/Azandr11.jpg"
             alt="Paysage en arrière-plan"
@@ -108,7 +108,7 @@ export default function page() {
             </div>
           </Copy>
         </div>
-        <div className="relative w-3/4 h-150">
+        <div className="relative w-3/4 h-150 2xl:h-200">
           <Image
             src="/images/Azandr5.jpg"
             alt="Paysage en arrière-plan"
@@ -142,7 +142,7 @@ export default function page() {
 
 
       <div className="flex flex-col xl:flex-row justify-center items-center py-40 md:px-20 px-4 gap-8">
-        <div className="relative w-3/4 h-150">
+        <div className="relative w-3/4 h-150 2xl:h-200">
           <Image
             src="/images/Azandr8.jpg"
             alt="Paysage en arrière-plan"

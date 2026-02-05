@@ -9,16 +9,12 @@ const Footer = () => {
     <footer className="w-full pt-40 pb-24 px-8 flex flex-col items-center justify-center gap-8 text-(--base-100) z-10 relative bg-transparent">
       <div className="w-[75%] h-px bg-gray-100 opacity-20"></div>
       <div className="flex flex-col items-center gap-2">
-        <Copy delay={0.5}>
-            <h3 className="text-2xl uppercase tracking-wider" style={{ fontFamily: 'var(--font-anton)' }}>
-                Contact
-            </h3>
-        </Copy>
-        <Copy delay={0.8}>
-            <Link href="mailto:azandrperso@gmail.com" className="text-lg hover:opacity-70 transition-opacity">
-            azandrperso@gmail.com
-            </Link>
-        </Copy>
+        <h3 className="text-2xl uppercase tracking-wider" style={{ fontFamily: 'var(--font-anton)' }}>
+            Contact
+        </h3>
+        <Link href="mailto:azandrperso@gmail.com" className="text-lg hover:opacity-70 transition-opacity">
+        azandrperso@gmail.com
+        </Link>
       </div>
 
       <div className="flex gap-6">
