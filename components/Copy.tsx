@@ -64,7 +64,11 @@ export default function Copy({
           element.style.textIndent = "0";
         }
 
-        lines.current.push(...split.lines);
+        if (split.lines.length > 0) {
+          lines.current.push(...split.lines);
+        } else {
+          lines.current.push(element);
+        }
       });
 
       gsap.set(lines.current, { y: "100%", display: "block" });

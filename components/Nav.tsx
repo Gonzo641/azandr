@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link"
+import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -49,8 +50,14 @@ export default function Nav() {
   return (
     <nav className="fixed z-10 flex items-center justify-between w-full md:p-8 p-6">
       <div>
-        <Link href="/" className="text-2xl font-anton">
-          Azandr
+        <Link href="/">
+          <Image
+            src="/images/Logo_Azandr_blanc.png"
+            alt="Azandr Logo"
+            width={120}
+            height={40}
+            priority
+          />
         </Link>
       </div>
       <div className="flex gap-4 md:gap-8 justify-center items-center font-anton">

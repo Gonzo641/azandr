@@ -166,11 +166,17 @@ export default function Home() {
           quality={75}
         />
         <div className="flex items-end h-full">
-          <Copy key={showPreloader ? "loading-copy" : "loaded-copy"} delay={showPreloader ? 100 : 0.05} animateOnScroll={false}>
-            <h1 className="text-8xl lg:text-[12rem]">
-              AZANDR
-            </h1>
-          </Copy>
+          <div className="overflow-hidden">
+            <Copy key={showPreloader ? "loading-copy" : "loaded-copy"} delay={showPreloader ? 100 : 0.05} animateOnScroll={false}>
+              <Image
+                src="/images/Logo_Azandr_blanc.png"
+                alt="Azandr Logo"
+                width={1400}
+                height={40}
+                priority
+              />
+            </Copy>
+          </div>
         </div>
 
         <RevealList key={showPreloader ? "loading-list" : "loaded-list"} className="flex justify-end items-end w-full gap-3.5" delay={showPreloader ? 100 : 0.05} interval={0.1}>
