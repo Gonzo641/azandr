@@ -35,6 +35,7 @@ const Spotlight = () => {
   };
 
   const spotlightItems = [
+    { name: "CrossFat", img: "/images/az-track11.jpg", link: "https://open.spotify.com/intl-fr/album/3TZd6bbtSUODgLiNMYWYU0" },
     { name: "Statement", img: "/images/az-track10.jpg", link: "https://open.spotify.com/intl-fr/album/07vFoZ7yersYOCpwStbkpW" },
     { name: "Let's Have Some Groove MF", img: "/images/az-track1.jpg", link: "https://soundcloud.com/azandr/lets-have-some-groove-mf" },
     { name: "Tequila Please", img: "/images/az-track2.jpg", link: "https://open.spotify.com/intl-fr/track/6ROgRXmCnenY2IUZDz3L6U" },
