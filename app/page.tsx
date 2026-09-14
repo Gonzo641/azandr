@@ -132,11 +132,11 @@ export default function Home() {
               <h1>Music</h1>
             </div>
           </div>
-          <div className="divider"></div>
+          {/* <div className="divider"></div> */}
           <div className="spinner-container">
             <div className="spinner"></div>
           </div>
-          <div className="counter">
+          {/* <div className="counter">
             <div className="count">
               <div className="digit"><h1>You think it&apos;s a Drop ?</h1></div>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
             <div className="count">
               <div className="digit"><h1>This is a Statement</h1></div>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
 

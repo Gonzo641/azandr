@@ -35,6 +35,7 @@ const Spotlight = () => {
   };
 
   const spotlightItems = [
+    { name: "Pressure", img: "/images/az-track13.jpg", link: "https://open.spotify.com/intl-fr/album/2yYyBM7d3RtqIFCwHZsHj0?flow_ctx=e5b59dc1-e4ac-4f55-b4cb-11a4afdf5ca3%3A1789407728" },
     { name: "Signals", img: "/images/az-track12.jpg", link: "https://open.spotify.com/intl-fr/album/0TPAqzfkvqsbrxOkJWGfsS" },
     { name: "CrossFat", img: "/images/az-track11.jpg", link: "https://open.spotify.com/intl-fr/album/3TZd6bbtSUODgLiNMYWYU0" },
     { name: "Statement", img: "/images/az-track10.jpg", link: "https://open.spotify.com/intl-fr/album/07vFoZ7yersYOCpwStbkpW" },
