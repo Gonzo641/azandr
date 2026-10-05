@@ -1,5 +1,5 @@
 "use client";
-// @ts-expect-error CSS is loaded by the bundler as a side effect.
+
 import "./Spotlight.css";
 import Link from "next/link";
 import Image from "next/image";
