@@ -1,4 +1,5 @@
 "use client";
+// @ts-expect-error CSS is loaded by the bundler as a side effect.
 import "./Spotlight.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -35,6 +36,7 @@ const Spotlight = () => {
   };
 
   const spotlightItems = [
+    { name: "Sirens of Joy", img: "/images/az-track14.jpg", link: "https://open.spotify.com/intl-fr/track/2ySmKPRxhDF0RoqFSQscxr?autoplay_ok=1" },
     { name: "Pressure", img: "/images/az-track13.jpg", link: "https://open.spotify.com/intl-fr/album/2yYyBM7d3RtqIFCwHZsHj0?flow_ctx=e5b59dc1-e4ac-4f55-b4cb-11a4afdf5ca3%3A1789407728" },
     { name: "Signals", img: "/images/az-track12.jpg", link: "https://open.spotify.com/intl-fr/album/0TPAqzfkvqsbrxOkJWGfsS" },
     { name: "CrossFat", img: "/images/az-track11.jpg", link: "https://open.spotify.com/intl-fr/album/3TZd6bbtSUODgLiNMYWYU0" },
